@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/extract_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/extract_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_extract_dots" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/linear_banner"
+                android:layout_width="2dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardBackgroundColor="#DCDCDC"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/extract_icon"
+                app:layout_constraintStart_toStartOf="@+id/extract_icon"
+                app:layout_constraintTop_toBottomOf="@+id/extract_icon" />
+
+            <TextView
+                android:id="@+id/extract_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/extract_hour_title_1"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/extract_icon"
+                app:layout_constraintStart_toEndOf="@+id/extract_icon"
+                app:layout_constraintTop_toTopOf="@+id/extract_icon" />
+
+            <TextView
+                android:id="@+id/extract_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/payment_subtitle_1"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/extract_time"
+                app:layout_constraintTop_toBottomOf="@+id/extract_time" />
+
+            <TextView
+                android:id="@+id/extract_type_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/extract_subtitle_2"
+                app:layout_constraintStart_toStartOf="@+id/extract_type"
+                app:layout_constraintTop_toBottomOf="@+id/extract_type" />
+
+            <TextView
+                android:id="@+id/extract_value_transaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/extract_price_subtitle_3"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/extract_type"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/extract_type" />
+
+            <ImageView
+                android:id="@+id/arrow_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/extract_value_transaction"
+                app:layout_constraintTop_toBottomOf="@+id/extract_value_transaction"
+                app:srcCompat="@drawable/ic_seta_extract" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

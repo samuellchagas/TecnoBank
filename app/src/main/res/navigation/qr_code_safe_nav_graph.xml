@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/qr_code_safe_nav_graph.xml"
+    app:startDestination="@id/qrCodeSafeFragment">
+
+    <fragment
+        android:id="@+id/qrCodeSafeFragment"
+        android:name="com.example.tecnobank.home.fragments.QrCodeSafeFragment"
+        android:label="QrCodeSafeFragment"
+        tools:layout="@layout/qr_code_safe_fragment">
+    </fragment>
+</navigation>

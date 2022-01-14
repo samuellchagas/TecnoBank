@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/scannerqrcode"
+        android:icon="@drawable/ic_qrcode"
+        android:title="Leitor Qr Code"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/ic_notificacao"
+        android:title="Notificações"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_login"
+        android:title="Perfil"
+        app:showAsAction="always"/>
+
+</menu>

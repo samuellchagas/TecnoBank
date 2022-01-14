@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.tecnobank.home.fragments.HomeFragment"
+        android:label="inicio"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_pixQrCodeActivity"
+            app:destination="@id/pixQrCodeActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_cardsFragment"
+            app:destination="@id/cardsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_accountDependencyActivity"
+            app:destination="@id/accountDependencyActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_notificationActivity"
+            app:destination="@id/notificationActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_qrCodeSafeActivity"
+            app:destination="@id/qrCodeSafeActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_payQrCodeActivity"
+            app:destination="@id/payQrCodeActivity" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/extractFragment"
+        android:name="com.example.tecnobank.extract.fragments.ExtractFragment"
+        android:label="extrato"
+        tools:layout="@layout/extract_fragment">
+        <action
+            android:id="@+id/action_extratoFragment_to_filterActivity"
+            app:destination="@id/filterActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardsFragment"
+        android:name="com.example.tecnobank.cards.fragment.CardsFragment"
+        android:label="cartoes"
+        tools:layout="@layout/cards_fragment">
+
+    </fragment>
+    <fragment
+        android:id="@+id/salesFragment"
+        android:name="com.example.tecnobank.sales.fragment.SalesFragment"
+        android:label="vendas"
+        tools:layout="@layout/sales_fragment" />
+    <activity
+        android:id="@+id/filterActivity"
+        android:name="com.example.tecnobank.extract.activity.FilterActivity"
+        android:label="complement_activity"
+        tools:layout="@layout/filter_activity" />
+    <activity
+        android:id="@+id/pixQrCodeActivity"
+        android:name="com.example.tecnobank.home.activity.services.PixQrCodeActivity"
+        android:label="PixQrCodeActivity"
+        tools:layout="@layout/pix_qr_code_fragment" >
+        <argument
+            android:name="passedToPixOnbording"
+            app:argType="boolean"
+            android:defaultValue="false"/>
+    </activity>
+    <activity
+        android:id="@+id/accountDependencyActivity"
+        android:name="com.example.tecnobank.home.activity.AccountDependencyActivity"
+        android:label="AccountDependencyActivity" />
+    <activity
+        android:id="@+id/notificationActivity"
+        android:name="com.example.tecnobank.home.activity.NotificationActivity"
+        android:label="notification_activity"
+        tools:layout="@layout/notification_activity" />
+    <activity
+        android:id="@+id/qrCodeSafeActivity"
+        android:name="com.example.tecnobank.home.activity.QrCodeSafeActivity"
+        android:label="qr_code_safe_activity"
+        tools:layout="@layout/qr_code_safe_activity" />
+    <activity
+        android:id="@+id/payQrCodeActivity"
+        android:name="com.example.tecnobank.home.activity.services.PayQrCodeActivity"
+        android:label="pay_qr_code_activity"
+        tools:layout="@layout/pay_qr_code_activity" />
+</navigation>

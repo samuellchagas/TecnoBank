@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_inicio"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/extractFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_extrato"
+        android:title="Extrato" />
+    <item
+        android:id="@+id/salesFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_vendas"
+        android:title="Vendas" />
+    <item
+        android:id="@+id/cardsFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_cartao"
+        android:title="Cartões" />
+
+</menu>

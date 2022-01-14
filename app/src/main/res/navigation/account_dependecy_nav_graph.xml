@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/account_dependecy_nav_graph"
+    app:startDestination="@id/accountDependecyFragment">
+
+    <fragment
+        android:id="@+id/accountDependecyFragment"
+        android:name="com.example.tecnobank.home.fragments.AccountDependecyFragment"
+        android:label="AccountDependecyFragment"
+        tools:layout="@layout/account_dependency_fragment" />
+</navigation>

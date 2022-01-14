@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pay_qr_code_nav_graph.xml"
+    app:startDestination="@id/payQrCodeFragment">
+
+    <fragment
+        android:id="@+id/payQrCodeFragment"
+        android:name="com.example.tecnobank.home.fragments.services.PayQrCodeFragment"
+        android:label="PayQrCodeFragment"
+        tools:layout="@layout/pay_qr_code_fragment"/>
+</navigation>
